@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Brain, Heart, Users, Sparkles, MessageCircle, Briefcase, Shield } from "lucide-react";
 
 interface ReflexaoProps {
@@ -6,39 +7,74 @@ interface ReflexaoProps {
   titulo: string;
   resumo: string;
   conteudo: string;
+  index: number;
 }
 
-const Reflexao = ({ icon, titulo, resumo, conteudo }: ReflexaoProps) => {
+const Reflexao = ({ icon, titulo, resumo, conteudo, index }: ReflexaoProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-md">
-      <button
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ 
+        duration: 0.5, 
+        delay: index * 0.1,
+        ease: [0.25, 0.46, 0.45, 0.94]
+      }}
+      className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-md"
+    >
+      <motion.button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full p-6 text-left flex items-start gap-4 focus:outline-none focus:ring-2 focus:ring-primary/20 rounded-2xl"
+        whileHover={{ backgroundColor: "hsl(var(--muted) / 0.3)" }}
+        transition={{ duration: 0.2 }}
       >
-        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary">
+        <motion.div 
+          className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary"
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+        >
           {icon}
-        </div>
+        </motion.div>
         <div className="flex-1 min-w-0">
           <h3 className="font-serif text-xl text-foreground mb-2">{titulo}</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">{resumo}</p>
         </div>
-        <ChevronDown 
-          className={`w-5 h-5 text-muted-foreground transition-transform duration-300 flex-shrink-0 mt-1 ${isOpen ? 'rotate-180' : ''}`}
-        />
-      </button>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+        >
+          <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+        </motion.div>
+      </motion.button>
       
-      <div className={`overflow-hidden transition-all duration-500 ${isOpen ? 'max-h-[2000px]' : 'max-h-0'}`}>
-        <div className="px-6 pb-6 pt-2">
-          <div className="border-t border-border pt-4">
-            <div className="prose prose-sm max-w-none text-muted-foreground leading-relaxed whitespace-pre-line">
-              {conteudo}
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="overflow-hidden"
+          >
+            <div className="px-6 pb-6 pt-2">
+              <div className="border-t border-border pt-4">
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1, duration: 0.3 }}
+                  className="prose prose-sm max-w-none text-muted-foreground leading-relaxed whitespace-pre-line"
+                >
+                  {conteudo}
+                </motion.div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
   );
 };
 
@@ -163,9 +199,15 @@ Quando conseguimos olhar nossa experiência com liberdade, ampliamos nossa noç�
 
 export const OlharClinico = () => {
   return (
-    <section id="olhar-clinico" className="py-20 px-4 bg-muted/30">
+    <section id="olhar-clinico" className="py-20 px-4 bg-muted/30 overflow-hidden">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
+        <motion.div 
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
             Olhar Clínico
           </h2>
@@ -173,12 +215,13 @@ export const OlharClinico = () => {
             Reflexões sobre temas que atravessam a experiência humana e que frequentemente 
             aparecem no processo terapêutico. Um convite para pensar junto.
           </p>
-        </div>
+        </motion.div>
 
         <div className="space-y-4">
           {reflexoes.map((reflexao, index) => (
             <Reflexao
               key={index}
+              index={index}
               icon={reflexao.icon}
               titulo={reflexao.titulo}
               resumo={reflexao.resumo}
@@ -187,11 +230,17 @@ export const OlharClinico = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <motion.div 
+          className="mt-12 text-center"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <p className="text-sm text-muted-foreground italic">
             Textos autorais — Felipe Araujo de Melo | CRP 06/193310
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

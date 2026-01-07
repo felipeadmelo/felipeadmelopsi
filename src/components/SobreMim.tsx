@@ -1,0 +1,80 @@
+import perfilImg from "@/assets/perfil.jpg";
+import { GraduationCap, Building2, Heart, Users } from "lucide-react";
+
+export const SobreMim = () => {
+  const experiencias = [
+    {
+      icon: GraduationCap,
+      titulo: "Formação",
+      descricao: "Graduado em Psicologia pela Universidade Federal da Paraíba (UFPB), com aprofundamento em psicologia comunitária e clínica. Monitor da disciplina Teoria e Terapia Centrada na Pessoa e estágio supervisionado de base rogeriana na Clínica Escola.",
+    },
+    {
+      icon: Building2,
+      titulo: "Assistência Social",
+      descricao: "Atuação em São Paulo com imigrantes e refugiados, idosos e público egresso do sistema prisional, desenvolvendo escuta qualificada e acolhimento de diversas vivências.",
+    },
+    {
+      icon: Heart,
+      titulo: "Especialização",
+      descricao: "Finalizando especialização em atendimento clínico de famílias acometidas por abuso sexual no PROFAM, Instituto de Psicologia da USP.",
+    },
+    {
+      icon: Users,
+      titulo: "Acolhimento ao Luto",
+      descricao: "Voluntário no Programa de Acolhimento ao Luto da UNIFESP, participando de formações e supervisões semanais ligadas ao manejo de casos de luto.",
+    },
+  ];
+
+  return (
+    <section id="sobre" className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-12 gap-12 items-start">
+          {/* Foto e nome */}
+          <div className="md:col-span-4 text-center md:sticky md:top-24">
+            <div className="relative inline-block">
+              <div className="absolute -inset-3 bg-accent/10 rounded-full" />
+              <img
+                src={perfilImg}
+                alt="Felipe Melo - Psicólogo"
+                className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-xl mx-auto"
+              />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-serif font-medium text-foreground mt-8 mb-2">
+              Felipe Melo
+            </h2>
+            <p className="text-muted-foreground">
+              Psicólogo Clínico
+            </p>
+          </div>
+
+          {/* Trajetória */}
+          <div className="md:col-span-8">
+            <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-8">
+              Minha Trajetória
+            </h3>
+
+            <p className="text-foreground/85 leading-relaxed mb-10">
+              Da Paraíba para São Paulo, construí uma trajetória marcada pela escuta sensível 
+              e pelo interesse genuíno nas histórias de vida. Minha formação rogeriana me ensinou 
+              que cada pessoa possui recursos internos para seu próprio desenvolvimento — 
+              e meu papel é facilitar esse caminho.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-6">
+              {experiencias.map((exp, index) => (
+                <div
+                  key={index}
+                  className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-md transition-all duration-300"
+                >
+                  <exp.icon className="w-8 h-8 text-primary mb-4" />
+                  <h4 className="font-serif text-xl text-foreground mb-2">{exp.titulo}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{exp.descricao}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

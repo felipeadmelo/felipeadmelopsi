@@ -96,7 +96,7 @@ Há no homem uma tendência natural para o desenvolvimento completo. O termo mai
   {
     icon: <Sparkles className="w-6 h-6" />,
     titulo: "A Noção do Eu",
-    resumo: "Como construímos a imagem que temos de nós mesmos e como isso afeta nossa vida?",
+    resumo: "Como construímos a imagem que temos de nós mesmos e como isso atravessa nossa vida?",
     conteudo: `Durante a vida criamos uma imagem sobre nós mesmos composta por experiências que vivemos, nossas memórias, histórias que ouvimos sobre nós mesmos em épocas que já não nos lembramos mais e por outros fatores que vamos nos identificando ao longo da vida. Rogers chamou essa imagem de "Noção de Si".
 
 "Como as leituras externas sobre nós podem afetar nossa própria relação interna?"
@@ -109,7 +109,7 @@ Nosso organismo tende entrar em estado de defesa e quando o assunto é algo tão
 
 Como nos enxergamos? Quais histórias que nos foram contadas realmente nos representam? Quanto de nosso querer é nosso ou nos foi dito como verdade por alguém importante para nós?
 
-Essas perguntas são delicadas e podem ser desconfortáveis. A psicoterapia pode ser uma ferramenta muito potente nesse processo, que além de lento e com tempo muito particular, só pode ser respondido por uma pessoa: a que vivenciou todas essas histórias externa e internamente, o próprio sujeito.`
+Essas perguntas são delicadas e podem ser desconfortáveis. A psicoterapia oferece um espaço para explorar essas questões — um processo lento, com tempo muito particular, que só pode ser vivenciado por quem atravessou todas essas histórias externa e internamente.`
   },
   {
     icon: <Heart className="w-6 h-6" />,
@@ -125,7 +125,7 @@ Ambos os sentimentos são verdadeiros e podem se tornar confusos se são postos 
 
 Sabe aquela sensação de que tem algo estranho? Ela pode significar que não estamos agindo de maneira autêntica, ou, até, que não estamos aceitando a autenticidade que há no que vivenciamos.
 
-Falar sobre os estranhamentos que experienciamos é fundamental para percebermos características próprias que deixamos de ver como sendo nossas e que muitas vezes vem à tona quando nos relacionamos. A psicoterapia é uma grande ajuda nesse processo de descoberta de si e na busca de um acordo com as contradições e ambiguidades que são parte da vida e das relações.
+Falar sobre os estranhamentos que experienciamos é fundamental para percebermos características próprias que deixamos de ver como sendo nossas e que muitas vezes vem à tona quando nos relacionamos. A psicoterapia oferece um espaço de escuta para esse processo de descoberta de si e na busca de um acordo com as contradições e ambiguidades que são parte da vida e das relações.
 
 Sendo você como é, de que maneira estaria sendo autêntico a você em seus relacionamentos?`
   },
@@ -146,26 +146,26 @@ Dessa maneira, o sentido é mais próximo de firmar um compromisso com as críti
   {
     icon: <Briefcase className="w-6 h-6" />,
     titulo: "Carreira e Saúde Mental",
-    resumo: "É possível cuidar da carreira profissional e da saúde mental ao mesmo tempo?",
+    resumo: "Como a vida profissional atravessa nosso bem-estar emocional?",
     conteudo: `É claro que para alcançar um crescimento profissional é necessário esforço, mas quando esse esforço não corresponde à expectativa, há uma lacuna entre o que se espera e o que é possível, consequentemente uma carga maior de sofrimento gerada nesse processo.
 
 É importante que tenhamos expectativas e é compreensível que elas sejam altas, afinal a realização profissional envolve vários sonhos e também diz respeito a como queremos estar no futuro. O problema acontece quando em nome de tão altas expectativas, a realização desse sonho começa a soar impossível e passa a ofuscar o reconhecimento dos passos que estão sendo dados ou até mesmo a paralisar o investimento que de fato poderia estar sendo feito.
 
 Prestar atenção a como esse campo da vida de cada um é afetado por outras relações é uma forma de cuidado. Seja pelo ambiente no qual se é desenvolvido esse investimento; pelas pessoas que influenciam nesse desenvolvimento; a forma como cada um se relaciona com esse desenvolvimento…
 
-Reconhecer essas expectativas/frustrações é o primeiro passo para compreender de onde elas nascem e assim ter um melhor diálogo com as possibilidades reais, construindo uma caminhada saudável na direção que cada um deseja seguir.`
+Reconhecer essas expectativas e frustrações é o primeiro passo para compreender de onde elas nascem e assim ter um melhor diálogo com as possibilidades reais, construindo uma caminhada mais consciente na direção que cada um deseja seguir.`
   },
   {
     icon: <Shield className="w-6 h-6" />,
     titulo: "Impotência e Limites",
-    resumo: "Como lidar com o sentimento de impotência e aprender a reconhecer nossos limites?",
+    resumo: "O que o sentimento de impotência pode nos dizer sobre nós mesmos?",
     conteudo: `Impotência é um tema bem recorrente na minha escuta clínica e arrisco dizer que é algo que todos nós sentimos em determinadas situações. Muitas vezes esse sentimento pode tomar grandes proporções e geralmente aparece quando nos deparamos com algo que tendemos a ver como algo negativo: limites.
 
 Sim, o indesejável limite que vem nos falar que, aquela coisa que gostaríamos de realizar, de certa maneira, em certo tempo e em tal lugar, não vai acontecer bem assim e que vamos ter que recalcular a rota e traçar algum plano que dialogue com as possibilidades da realidade.
 
 Mas infelizmente a superprodutividade tem sido declarada como atual estilo de vida, aceitar limitações tem soado como erro e o lazer visto como uma perda de tempo. Acontece que o saldo de uma vida focada em expectativas irreais demora a chegar, mas chega enquanto esgotamento trazendo exatamente o que temos nos convencido a ignorar: o sentimento de impotência.
 
-Conhecer seus próprios limites é o caminho mais saudável de se aproximar deles e de eventualmente superá-los e deparar-se com outros e isso também é um processo de autoconhecimento.`
+Conhecer seus próprios limites é um caminho para se aproximar deles e de eventualmente deparar-se com outros — e isso também é um processo de autoconhecimento.`
   },
   {
     icon: <Users className="w-6 h-6" />,
@@ -179,7 +179,7 @@ Faz pouco tempo que mudamos essa perspectiva e a maneira como narramos os fatos 
 
 Parte dessa força vem da possibilidade de poder contar suas histórias, criando vozes próprias diante das violências que foram cometidas no passado e que ainda acontecem nos dias de hoje. Esse processo pode ser lido como uma criação de narrativas próprias, contadas por quem as vive.
 
-A existência dessa voz é algo fundamental para todos os seres humanos. Enquanto terapeuta, trabalho ajudando meus clientes a retomarem as rédeas de suas histórias, se aproximando dos capítulos que muitas vezes em nome da dor, são ignorados. As pessoas LGBTQIA+ têm muito a ensinar sobre essa coragem de olhar para as feridas, as violências e para a história e reunir forças para recontar a história e ser de fato quem se é.`
+A existência dessa voz é algo fundamental para todos os seres humanos. Enquanto terapeuta, acompanho pessoas na retomada das rédeas de suas histórias, se aproximando dos capítulos que muitas vezes em nome da dor, são ignorados. As pessoas LGBTQIA+ têm muito a ensinar sobre essa coragem de olhar para as feridas, as violências e para a história e reunir forças para recontar a história e ser de fato quem se é.`
   },
   {
     icon: <Heart className="w-6 h-6" />,

@@ -13,7 +13,7 @@ export const Hero = () => {
         <img 
           src={logo} 
           alt="Logo Felipe Melo - Psicólogo" 
-          className="w-40 h-40 md:w-56 md:h-56 mx-auto mb-8 animate-fade-in"
+          className="w-40 md:w-56 h-auto mx-auto mb-8 animate-fade-in"
         />
         
         <h1 className="text-4xl md:text-6xl font-serif font-medium text-foreground mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
@@ -21,7 +21,7 @@ export const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl font-sans text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          Psicólogo | CRP 06/XXXXX
+          Psicólogo | CRP 06/193310
         </p>
         
         <p className="text-lg md:text-xl font-sans text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: "0.6s" }}>

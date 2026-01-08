@@ -40,6 +40,9 @@ export const Footer = () => {
           <a href="#atendimento" className="hover:text-secondary-foreground transition-colors">
             Como Atendo
           </a>
+          <a href="/curriculo" className="hover:text-secondary-foreground transition-colors">
+            Currículo
+          </a>
         </nav>
         
         <p className="text-xs text-secondary-foreground/50">

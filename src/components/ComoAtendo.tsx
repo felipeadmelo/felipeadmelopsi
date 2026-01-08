@@ -1,10 +1,32 @@
-import { Monitor, MapPin, Clock, Calendar } from "lucide-react";
+import { Monitor, MapPin, Clock, Calendar, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import clinica1 from "@/assets/clinica-1.jpg";
+import clinica2 from "@/assets/clinica-2.jpg";
+
+const clinicaSlides = [
+  { type: "map" as const },
+  { type: "image" as const, src: clinica1, alt: "Sala de atendimento - ambiente acolhedor" },
+  { type: "image" as const, src: clinica2, alt: "Consultório - espaço de trabalho" },
+];
 
 export const ComoAtendo = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % clinicaSlides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % clinicaSlides.length);
+  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + clinicaSlides.length) % clinicaSlides.length);
+
   return (
     <section id="atendimento" className="py-24 px-6 bg-muted/30">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-6">
           Como Atendo
         </h2>
@@ -12,24 +34,95 @@ export const ComoAtendo = () => {
           Ofereço atendimento presencial em São Paulo e online para qualquer lugar do Brasil.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-8 mb-16">
-          {/* Presencial */}
-          <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-              <MapPin className="w-8 h-8 text-primary" />
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          {/* Presencial com carrossel */}
+          <div className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-6 bg-muted">
+              <AnimatePresence mode="wait">
+                {clinicaSlides[currentSlide].type === "map" ? (
+                  <motion.iframe
+                    key="map"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975736338!2d-46.6867!3d-23.5632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQ3LjUiUyA0NsKwNDEnMTIuMSJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                    className="absolute inset-0 w-full h-full"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                ) : (
+                  <motion.img
+                    key={clinicaSlides[currentSlide].src}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    src={clinicaSlides[currentSlide].src}
+                    alt={clinicaSlides[currentSlide].alt}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                )}
+              </AnimatePresence>
+
+              {/* Navigation arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-background transition-colors"
+                aria-label="Anterior"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-background transition-colors"
+                aria-label="Próximo"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+
+              {/* Dots */}
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                {clinicaSlides.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setCurrentSlide(i)}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      i === currentSlide ? "bg-primary" : "bg-background/60"
+                    }`}
+                    aria-label={`Ir para slide ${i + 1}`}
+                  />
+                ))}
+              </div>
             </div>
-            <h3 className="text-2xl font-serif text-foreground mb-4">Presencial</h3>
+
+            <h3 className="text-2xl font-serif text-foreground mb-3">Presencial</h3>
             <p className="text-muted-foreground mb-4">
-              Consultório em São Paulo
+              Espaço Marke • São Paulo
             </p>
-            <a
-              href="https://share.google/PqCx0THOS2G81PuHw"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 underline underline-offset-4 transition-colors"
-            >
-              Ver localização no mapa
-            </a>
+            
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://share.google/PqCx0THOS2G81PuHw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+              >
+                <MapPin className="w-4 h-4" />
+                <span className="underline underline-offset-4">Ver no mapa</span>
+              </a>
+              <a
+                href="https://www.instagram.com/espacomarke/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+              >
+                <Instagram className="w-4 h-4" />
+                <span className="underline underline-offset-4">@espacomarke</span>
+              </a>
+            </div>
           </div>
 
           {/* Online */}

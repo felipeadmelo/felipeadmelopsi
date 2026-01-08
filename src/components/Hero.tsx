@@ -30,12 +30,20 @@ export const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.8s" }}>
           <WhatsAppButton size="lg" />
-          <a 
-            href="#processo" 
-            className="text-primary hover:text-primary/80 font-medium transition-colors underline underline-offset-4"
-          >
-            Saiba mais sobre a terapia
-          </a>
+          <div className="flex gap-4">
+            <a 
+              href="#processo" 
+              className="text-primary hover:text-primary/80 font-medium transition-colors underline underline-offset-4"
+            >
+              Saiba mais sobre a terapia
+            </a>
+            <a 
+              href="/curriculo" 
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors underline underline-offset-4"
+            >
+              Currículo
+            </a>
+          </div>
         </div>
       </div>
     </section>

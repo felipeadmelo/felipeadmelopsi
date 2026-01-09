@@ -213,7 +213,16 @@ export const OlharClinico = () => {
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
             Reflexões sobre temas que atravessam a experiência humana e que frequentemente 
-            aparecem no processo terapêutico. Um convite para pensar junto.
+            aparecem no processo terapêutico. Textos originalmente publicados no meu{" "}
+            <a 
+              href="https://www.instagram.com/felipeadmelopsi/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Instagram
+            </a>
+            . Um convite para pensar junto.
           </p>
         </motion.div>
 

@@ -54,7 +54,8 @@ export const SobreMim = () => {
             </h3>
 
             <p className="text-foreground/85 leading-relaxed mb-10">
-              Da Paraíba para São Paulo, construí uma trajetória marcada pela escuta sensível 
+              Natural de Alagoas, me mudei para a Paraíba para cursar Psicologia na UFPB, 
+              e depois para São Paulo, onde continuo construindo uma trajetória marcada pela escuta sensível 
               e pelo interesse genuíno nas histórias de vida. Minha formação rogeriana me ensinou 
               que cada pessoa possui recursos internos para seu próprio desenvolvimento — 
               e meu papel é facilitar esse caminho.

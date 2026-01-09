@@ -6,9 +6,14 @@ import logo from "@/assets/logo.png";
 export const CurriculoPage = () => {
   const experienciaProfissional = [
     {
+      titulo: "Técnico Psicólogo",
+      instituicao: "Instituto Responsa",
+      periodo: "Desde 05/25"
+    },
+    {
       titulo: "Psicólogo Social",
       instituicao: "Núcleo de Convivência de Idosos São Francisco de Assis (Centro Comunitário Nossa Senhora de Aparecida)",
-      periodo: "Desde 09/24"
+      periodo: "09/24 - 05/25"
     },
     {
       titulo: "Psicólogo Social",

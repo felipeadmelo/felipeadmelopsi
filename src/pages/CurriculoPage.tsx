@@ -8,32 +8,32 @@ export const CurriculoPage = () => {
     {
       titulo: "Psicólogo Social",
       instituicao: "Núcleo de Convivência de Idosos São Francisco de Assis (Centro Comunitário Nossa Senhora de Aparecida)",
-      periodo: "Desde 09/24",
-      descricao: "Elaboração de ações para estimular a convivência de idosos da Comunidade Jardim Antártica - Peri, promovendo atividades de bem-estar e fortalecimento de laços sociais. Realização de visitas domiciliares a idosos acamados ou com mobilidade reduzida, além de identificar e auxiliar em demandas de vulnerabilidades sociais e violações de direitos."
+      periodo: "Desde 09/24"
     },
     {
       titulo: "Psicólogo Social",
       instituicao: "Centro de Acolhida Casa de Assis (SEFRAS)",
-      periodo: "05 - 08/24",
-      descricao: "Acompanhamento social de aproximadamente 45 imigrantes em situação de rua. O trabalho inclui encaminhamento para documentação brasileira, elaboração de Plano Individual de Atendimento e encaminhamentos para serviços de educação, cidadania, saúde e trabalho."
+      periodo: "05 - 08/24"
     },
     {
       titulo: "Psicólogo Clínico",
       instituicao: "Psicoterapia",
-      periodo: "Desde 02/22",
-      descricao: "Atendimento clínico desde o estágio supervisionado em 2021. Após formação e registro no CRP, atendimentos autônomos de forma virtual e presencial, inicialmente em João Pessoa e posteriormente em São Paulo."
+      periodo: "Desde 02/22"
     },
     {
       titulo: "Psicólogo Voluntário",
       instituicao: "Coordenação-Geral do CONARE",
-      periodo: "03 - 05/24",
-      descricao: "Voluntário oferecendo rodas de escuta semanais para a equipe do CONARE, avaliando condições de trabalho e impactos emocionais relacionados ao contato com histórias de pessoas que buscam refúgio no Brasil."
+      periodo: "03 - 05/24"
+    },
+    {
+      titulo: "Voluntário — Programa de Acolhimento ao Luto (PROALU)",
+      instituicao: "UNIFESP",
+      periodo: "Em andamento"
     },
     {
       titulo: "Estágio Supervisionado em Psicoterapia",
       instituicao: "Clínica Escola de Psicologia da UFPB",
-      periodo: "03/21 - 12/21",
-      descricao: "Acompanhamento semanal de pessoas em sofrimento psíquico, com supervisão em grupo fundamentada na Abordagem Centrada na Pessoa. Elaboração de relatório sobre o desenvolvimento dos casos acompanhados."
+      periodo: "03/21 - 12/21"
     }
   ];
 
@@ -42,54 +42,52 @@ export const CurriculoPage = () => {
       titulo: "Corpo + Arte = +Saúde",
       tipo: "Curso de Férias",
       instituicao: "Faculdade de Saúde Pública da USP",
-      periodo: "02/25",
-      descricao: "Curso voltado às práticas corporais e artísticas como modos potentes para pensar e fazer o cuidado e a atenção em saúde, especialmente no contexto da atenção básica."
+      periodo: "02/25"
     },
     {
       titulo: "Liga Acadêmica de Psicologia Fenomenológica Existencial (LAPFE)",
       tipo: "Ligante Acadêmico",
       instituicao: "PUC-SP",
-      periodo: "04/23 - 07/23",
-      descricao: "Colaboração na construção e execução de grupo de estudos sobre os métodos científicos da fenomenologia, abordando suas origens e aplicações."
+      periodo: "04/23 - 07/23"
     },
     {
       titulo: "Para Além da Psicologia Clínica Clássica",
       tipo: "Projeto de Extensão",
       instituicao: "UFPB",
-      periodo: "04/19 - 12/21",
-      descricao: "Visitas semanais às famílias da Comunidade Santa Bárbara, orientadas pelos princípios da Educação Popular, realizando grupos cooperativos, oficinas e promovendo educação e saúde coletiva. Contemplado com bolsa durante o último ano."
+      periodo: "04/19 - 12/21"
     },
     {
       titulo: "UFPB no combate à COVID-19 — Apoio Matricial dos CAPS",
       tipo: "Projeto de Extensão",
       instituicao: "UFPB",
-      periodo: "04/21 - 12/21",
-      descricao: "Grupo de estudo, monitoramento e avaliação do cenário de apoio matricial em saúde mental na cidade de João Pessoa, com encontros remotos com equipes de saúde mental dos CAPS municipais."
+      periodo: "04/21 - 12/21"
     },
     {
       titulo: "Percepções de Jovens Homossexuais Nordestinos Acerca de Sua Inserção no Espaço Público na Cidade de São Paulo",
       tipo: "Projeto de Iniciação Científica",
       instituicao: "UFPB",
-      periodo: "04/20 - 04/21",
-      descricao: "Pesquisa para compreender a vivência de jovens homossexuais acerca de sua percepção no espaço urbano, através de entrevistas e análise fenomenológica. A pesquisa foi apresentada no ENID e recebeu prêmio de Elo Cidadão."
+      periodo: "04/20 - 04/21"
     },
     {
       titulo: "Disciplina Abordagem Centrada na Pessoa",
       tipo: "Projeto de Monitoria",
       instituicao: "UFPB",
-      periodo: "08/19 - 08/20",
-      descricao: "Auxílio à docente na execução da ementa da disciplina, com facilitação de conteúdos, plantão de dúvidas e avaliação dos trabalhos desenvolvidos pelos estudantes matriculados."
+      periodo: "08/19 - 08/20"
     },
     {
       titulo: "ACTUAR Empresa Júnior de Psicologia",
       tipo: "Projeto de Extensão",
       instituicao: "UFPB",
-      periodo: "06/17 - 04/18",
-      descricao: "Diretor de marketing responsável por divulgar estratégias de captação de clientes. Oferecendo serviços de avaliação de clima e cultura para empresas do setor de bares e restaurantes de João Pessoa."
+      periodo: "06/17 - 04/18"
     }
   ];
 
   const formacao = [
+    {
+      titulo: "Especialização em Atendimento Clínico de Famílias Acometidas por Abuso Sexual",
+      instituicao: "PROFAM — Instituto de Psicologia da USP",
+      periodo: "Em andamento"
+    },
     {
       titulo: "Psicólogo",
       instituicao: "Universidade Federal da Paraíba (UFPB)",
@@ -194,7 +192,6 @@ export const CurriculoPage = () => {
                   </h3>
                   <p className="text-muted-foreground">{item.instituicao}</p>
                   <p className="text-sm text-primary mt-2">{item.periodo}</p>
-                  <p className="text-sm text-foreground/70 mt-3 leading-relaxed">{item.descricao}</p>
                 </div>
               ))}
             </div>
@@ -227,7 +224,6 @@ export const CurriculoPage = () => {
                   </h3>
                   <p className="text-muted-foreground">{item.instituicao}</p>
                   <p className="text-sm text-primary mt-2">{item.periodo}</p>
-                  <p className="text-sm text-foreground/70 mt-3 leading-relaxed">{item.descricao}</p>
                 </div>
               ))}
             </div>

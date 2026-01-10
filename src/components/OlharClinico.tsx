@@ -80,20 +80,6 @@ const Reflexao = ({ icon, titulo, resumo, conteudo, index }: ReflexaoProps) => {
 
 const reflexoes = [
   {
-    icon: <Brain className="w-6 h-6" />,
-    titulo: "Abordagem Centrada na Pessoa",
-    resumo: "Conheça a perspectiva humanista desenvolvida por Carl Rogers e como ela fundamenta minha prática clínica.",
-    conteudo: `Desenvolvida pelo teórico norte-americano Carl R. Rogers (1902-1987) no século XX, a Abordagem Centrada na Pessoa contribuiu com a consolidação da perspectiva humanista na psicologia.
-
-A partir de seus estudos, Rogers percebeu no ser humano a capacidade inerente de direcionar-se ao crescimento, desde que haja uma atmosfera facilitadora dessa potencialidade. Essa capacidade foi nomeada de Tendência Atualizante e se tornou a noção chave da Abordagem Centrada na Pessoa (ACP).
-
-O atendimento psicoterápico centrado na pessoa considera as potencialidades de quem procura ajuda como as principais protagonistas para a compreensão do que está acontecendo no aqui e no agora. O terapeuta nessa abordagem funciona como o facilitador dessa atmosfera.
-
-"(...) existe em todo organismo, em qualquer nível, um fluxo subjacente de movimento para uma realização construtiva de suas possibilidades intrínsecas." — Rogers, 1977
-
-Há no homem uma tendência natural para o desenvolvimento completo. O termo mais frequentemente usado para isso é o de tendência de realização, que está presente em todos os organismos vivos. Trata-se do fundamento sobre o qual está construída a abordagem centrada na pessoa.`
-  },
-  {
     icon: <Sparkles className="w-6 h-6" />,
     titulo: "A Noção do Eu",
     resumo: "Como construímos a imagem que temos de nós mesmos e como isso atravessa nossa vida?",

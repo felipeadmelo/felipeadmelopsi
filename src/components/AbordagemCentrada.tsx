@@ -1,0 +1,100 @@
+import { motion } from "framer-motion";
+import { Brain, Quote } from "lucide-react";
+
+export const AbordagemCentrada = () => {
+  return (
+    <section id="abordagem" className="py-20 px-4 bg-background overflow-hidden">
+      <div className="max-w-4xl mx-auto">
+        <motion.div 
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <motion.div 
+              className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              <Brain className="w-6 h-6" />
+            </motion.div>
+          </div>
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+            Abordagem Centrada na Pessoa
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+            A perspectiva humanista que fundamenta minha prática clínica
+          </p>
+        </motion.div>
+
+        <div className="space-y-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-card rounded-2xl shadow-sm border border-border p-8"
+          >
+            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+              Desenvolvida pelo teórico norte-americano Carl R. Rogers (1902-1987) no século XX, 
+              a Abordagem Centrada na Pessoa contribuiu com a consolidação da perspectiva humanista 
+              na psicologia.
+            </p>
+            
+            <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+              A partir de seus estudos, Rogers percebeu no ser humano a capacidade inerente de 
+              direcionar-se ao crescimento, desde que haja uma atmosfera facilitadora dessa 
+              potencialidade. Essa capacidade foi nomeada de <strong className="text-foreground">Tendência Atualizante</strong> e 
+              se tornou a noção chave da Abordagem Centrada na Pessoa (ACP).
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              O atendimento psicoterápico centrado na pessoa considera as potencialidades de quem 
+              procura ajuda como as principais protagonistas para a compreensão do que está 
+              acontecendo no aqui e no agora. O terapeuta nessa abordagem funciona como o 
+              facilitador dessa atmosfera.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-primary/5 rounded-2xl p-8 border border-primary/10"
+          >
+            <div className="flex items-start gap-4">
+              <Quote className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <p className="text-foreground italic text-lg leading-relaxed mb-4">
+                  "(...) existe em todo organismo, em qualquer nível, um fluxo subjacente de 
+                  movimento para uma realização construtiva de suas possibilidades intrínsecas."
+                </p>
+                <p className="text-muted-foreground text-sm">
+                  — Carl Rogers, 1977
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="bg-card rounded-2xl shadow-sm border border-border p-8"
+          >
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              Há no homem uma tendência natural para o desenvolvimento completo. O termo mais 
+              frequentemente usado para isso é o de <strong className="text-foreground">tendência de realização</strong>, 
+              que está presente em todos os organismos vivos. Trata-se do fundamento sobre o qual 
+              está construída a abordagem centrada na pessoa.
+            </p>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};

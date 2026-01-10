@@ -7,7 +7,7 @@ export const Footer = () => {
         <img 
           src={logo} 
           alt="Logo Felipe Melo" 
-          className="w-16 h-auto mx-auto mb-6 opacity-80"
+          className="w-24 h-auto mx-auto mb-6 opacity-80"
         />
         
         <p className="text-secondary-foreground/80 mb-2">
@@ -48,6 +48,9 @@ export const Footer = () => {
           </a>
           <a href="#sobre" className="hover:text-secondary-foreground transition-colors">
             Sobre Mim
+          </a>
+          <a href="#abordagem" className="hover:text-secondary-foreground transition-colors">
+            Abordagem
           </a>
           <a href="#atendimento" className="hover:text-secondary-foreground transition-colors">
             Como Atendo

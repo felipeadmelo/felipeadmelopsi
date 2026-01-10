@@ -21,12 +21,9 @@ export const AbordagemCentrada = () => {
               <Brain className="w-6 h-6" />
             </motion.div>
           </div>
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground">
             Abordagem Centrada na Pessoa
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            A perspectiva humanista que fundamenta minha prática clínica
-          </p>
         </motion.div>
 
         <div className="space-y-8">
@@ -79,20 +76,6 @@ export const AbordagemCentrada = () => {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-card rounded-2xl shadow-sm border border-border p-8"
-          >
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              Há no homem uma tendência natural para o desenvolvimento completo. O termo mais 
-              frequentemente usado para isso é o de <strong className="text-foreground">tendência de realização</strong>, 
-              que está presente em todos os organismos vivos. Trata-se do fundamento sobre o qual 
-              está construída a abordagem centrada na pessoa.
-            </p>
-          </motion.div>
         </div>
       </div>
     </section>

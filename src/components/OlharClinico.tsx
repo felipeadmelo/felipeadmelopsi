@@ -232,8 +232,11 @@ export const OlharClinico = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <p className="text-sm text-muted-foreground italic">
-            Textos autorais — Felipe Araujo de Melo | CRP 06/193310
+          <p className="text-sm text-muted-foreground italic max-w-md mx-auto">
+            Textos de escrita autoral, originalmente publicados no meu perfil do Instagram.
+          </p>
+          <p className="text-sm text-muted-foreground mt-2">
+            Felipe Araujo de Melo | CRP 06/193310
           </p>
         </motion.div>
       </div>

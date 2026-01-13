@@ -28,22 +28,46 @@ export const Hero = () => {
           Um espaço seguro para navegar em lugares muitas vezes esquecidos e descobrir novas formas de lidar com o que aflige.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.8s" }}>
+        <div className="flex flex-col gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: "0.8s" }}>
           <WhatsAppButton size="lg" />
-          <div className="flex gap-4">
+          <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
             <a 
               href="#processo" 
-              className="text-primary hover:text-primary/80 font-medium transition-colors underline underline-offset-4"
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
             >
-              Saiba mais sobre a terapia
+              O Processo
+            </a>
+            <a 
+              href="#sobre" 
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
+            >
+              Sobre Mim
+            </a>
+            <a 
+              href="#abordagem" 
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
+            >
+              Abordagem
+            </a>
+            <a 
+              href="/olhar-clinico" 
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
+            >
+              Olhar Clínico
+            </a>
+            <a 
+              href="#atendimento" 
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
+            >
+              Como Atendo
             </a>
             <a 
               href="/curriculo" 
-              className="text-muted-foreground hover:text-foreground font-medium transition-colors underline underline-offset-4"
+              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
             >
               Currículo
             </a>
-          </div>
+          </nav>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Brain, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
+import rogersSymbol from "@/assets/rogers-symbol.png";
 
 export const AbordagemCentrada = () => {
   return (
@@ -12,15 +13,13 @@ export const AbordagemCentrada = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <motion.div 
-              className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            >
-              <Brain className="w-6 h-6" />
-            </motion.div>
-          </div>
+          <motion.div 
+            className="w-20 h-20 flex items-center justify-center"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <img src={rogersSymbol} alt="Símbolo da Abordagem Centrada na Pessoa" className="w-full h-auto" />
+          </motion.div>
           <h2 className="font-serif text-4xl md:text-5xl text-foreground">
             Abordagem Centrada na Pessoa
           </h2>

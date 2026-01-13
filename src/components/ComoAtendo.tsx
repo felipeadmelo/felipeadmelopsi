@@ -152,7 +152,7 @@ export const ComoAtendo = () => {
         {/* CTA */}
         <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-2xl p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-serif text-foreground mb-4">
-            Pronto para começar?
+            Agende uma sessão
           </h3>
           <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
             Entre em contato para agendar uma primeira conversa. Estou aqui para te ouvir.

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Brain, Heart, Users, Sparkles, MessageCircle, Briefcase, Shield } from "lucide-react";
+import rogerSymbol from "@/assets/roger_ii-2.png";
 
 interface ReflexaoProps {
   icon: React.ReactNode;
@@ -194,6 +195,15 @@ export const OlharClinico = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
+          <motion.img 
+            src={rogerSymbol} 
+            alt="Símbolo artístico inspirado em Carl Rogers" 
+            className="w-48 md:w-64 mx-auto mb-8 rounded-lg"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          />
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
             Olhar Clínico
           </h2>

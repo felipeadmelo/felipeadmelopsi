@@ -25,7 +25,7 @@ export const ComoAtendo = () => {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + clinicaSlides.length) % clinicaSlides.length);
 
   return (
-    <section id="atendimento" className="py-24 px-6 bg-muted/30">
+    <section id="atendimento" className="py-14 px-6 bg-muted/30">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground mb-6">
           Como Atendo

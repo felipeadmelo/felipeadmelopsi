@@ -4,7 +4,7 @@ import rogersSymbol from "@/assets/rogers-symbol.png";
 
 export const AbordagemCentrada = () => {
   return (
-    <section id="abordagem" className="py-20 px-4 bg-background overflow-hidden">
+    <section id="abordagem" className="py-14 px-4 bg-background overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <motion.div 
           className="text-center mb-12"

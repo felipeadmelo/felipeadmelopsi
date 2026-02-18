@@ -17,26 +17,34 @@ export const OlharClinicoLink = () => {
             to="/olhar-clinico"
             className="block group"
           >
-            <div className="bg-card rounded-2xl shadow-sm border border-border p-8 md:p-10 transition-all duration-300 hover:shadow-lg hover:border-primary/30">
-              <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform">
-                  <img src={rogerSymbol} alt="Olhar Clínico" className="w-full h-full object-cover" />
-                </div>
-                
-                <div className="flex-1">
-                  <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
-                    Olhar Clínico
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Reflexões sobre temas que atravessam a experiência humana: autenticidade, 
-                    autocrítica, emoções contraditórias e outros assuntos que frequentemente 
-                    aparecem no processo terapêutico.
-                  </p>
-                </div>
-                
-                <div className="flex items-center gap-2 text-primary font-medium">
-                  <span className="hidden md:inline">Explorar</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-border transition-all duration-300 hover:shadow-lg hover:border-primary/30">
+              {/* Background image */}
+              <div className="absolute inset-0">
+                <img 
+                  src={rogerSymbol} 
+                  alt="" 
+                  className="w-full h-full object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity duration-500 scale-110 group-hover:scale-100"
+                />
+              </div>
+              
+              {/* Content */}
+              <div className="relative p-8 md:p-10 bg-gradient-to-r from-card/95 via-card/80 to-card/60">
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
+                  <div className="flex-1">
+                    <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
+                      Olhar Clínico
+                    </h2>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Reflexões sobre temas que atravessam a experiência humana: autenticidade, 
+                      autocrítica, emoções contraditórias e outros assuntos que frequentemente 
+                      aparecem no processo terapêutico.
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 text-primary font-medium">
+                    <span className="hidden md:inline">Explorar</span>
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </div>
                 </div>
               </div>
             </div>

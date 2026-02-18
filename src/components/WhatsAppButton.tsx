@@ -19,7 +19,7 @@ export const WhatsAppButton = ({ size = "default", className }: WhatsAppButtonPr
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
-          "fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300",
+          "fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-[#2A7D6C] text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300",
           className
         )}
         aria-label="Contato via WhatsApp"
@@ -34,7 +34,7 @@ export const WhatsAppButton = ({ size = "default", className }: WhatsAppButtonPr
       asChild
       size={size === "lg" ? "lg" : "default"}
       className={cn(
-        "bg-[#25D366] hover:bg-[#20BD5C] text-white gap-2 font-medium",
+        "bg-[#2A7D6C] hover:bg-[#235F54] text-white gap-2 font-medium",
         size === "lg" && "text-lg px-8 py-6",
         className
       )}

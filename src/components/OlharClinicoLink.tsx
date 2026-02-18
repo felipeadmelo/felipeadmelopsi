@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { BookOpen, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import rogerSymbol from "@/assets/roger_ii-2.png";
 
 export const OlharClinicoLink = () => {
   return (
-    <section className="py-16 px-4 bg-muted/30">
+    <section className="py-10 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,8 +19,8 @@ export const OlharClinicoLink = () => {
           >
             <div className="bg-card rounded-2xl shadow-sm border border-border p-8 md:p-10 transition-all duration-300 hover:shadow-lg hover:border-primary/30">
               <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 text-primary group-hover:bg-primary/20 transition-colors">
-                  <BookOpen className="w-8 h-8" />
+                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 group-hover:scale-105 transition-transform">
+                  <img src={rogerSymbol} alt="Olhar Clínico" className="w-full h-full object-cover" />
                 </div>
                 
                 <div className="flex-1">

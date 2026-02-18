@@ -2,7 +2,7 @@ import magritteImg from "@/assets/magritte-therapist.jpg";
 
 export const ProcessoTerapeutico = () => {
   return (
-    <section id="processo" className="py-24 px-6 bg-muted/30">
+    <section id="processo" className="py-14 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Imagem do Magritte */}

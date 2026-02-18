@@ -26,7 +26,7 @@ export const SobreMim = () => {
   ];
 
   return (
-    <section id="sobre" className="py-24 px-6">
+    <section id="sobre" className="py-14 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-12 gap-12 items-start">
           {/* Foto e nome */}

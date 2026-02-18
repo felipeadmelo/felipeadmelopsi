@@ -17,19 +17,19 @@ export const OlharClinicoLink = () => {
             to="/olhar-clinico"
             className="block group"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-border transition-all duration-300 hover:shadow-lg hover:border-primary/30">
-              {/* Background image */}
-              <div className="absolute inset-0">
-                <img 
-                  src={rogerSymbol} 
-                  alt="" 
-                  className="w-full h-full object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity duration-500 scale-110 group-hover:scale-100"
-                />
-              </div>
-              
-              {/* Content */}
-              <div className="relative p-8 md:p-10 bg-gradient-to-r from-card/95 via-card/80 to-card/60">
-                <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
+            <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30">
+              <div className="flex flex-col md:flex-row items-stretch">
+                {/* Imagem à esquerda */}
+                <div className="md:w-48 lg:w-56 flex-shrink-0 bg-muted/50 flex items-center justify-center p-6">
+                  <img 
+                    src={rogerSymbol} 
+                    alt="Olhar Clínico" 
+                    className="w-32 md:w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Conteúdo */}
+                <div className="flex-1 p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5">
                   <div className="flex-1">
                     <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-2 group-hover:text-primary transition-colors">
                       Olhar Clínico

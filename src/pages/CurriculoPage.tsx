@@ -44,6 +44,12 @@ export const CurriculoPage = () => {
 
   const experienciaAcademica = [
     {
+      titulo: "Gente no Centro da Política de Drogas no Brasil: Abordagens Intersetoriais e Integradas (1ª Oferta)",
+      tipo: "Curso de Desenvolvimento",
+      instituicao: "Fundação Oswaldo Cruz",
+      periodo: "09/25"
+    },
+    {
       titulo: "Corpo + Arte = +Saúde",
       tipo: "Curso de Férias",
       instituicao: "Faculdade de Saúde Pública da USP",

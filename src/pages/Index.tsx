@@ -3,6 +3,7 @@ import { ProcessoTerapeutico } from "@/components/ProcessoTerapeutico";
 import { SobreMim } from "@/components/SobreMim";
 import { AbordagemCentrada } from "@/components/AbordagemCentrada";
 import { OlharClinicoLink } from "@/components/OlharClinicoLink";
+import { CurriculoLink } from "@/components/CurriculoLink";
 import { ComoAtendo } from "@/components/ComoAtendo";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -15,6 +16,7 @@ const Index = () => {
       <SobreMim />
       <AbordagemCentrada />
       <OlharClinicoLink />
+      <CurriculoLink />
       <ComoAtendo />
       <Footer />
       <WhatsAppButton size="floating" />

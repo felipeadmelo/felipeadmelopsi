@@ -20,11 +20,11 @@ export const OlharClinicoLink = () => {
             <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30">
               <div className="flex flex-col md:flex-row items-stretch">
                 {/* Imagem à esquerda */}
-                <div className="md:w-48 lg:w-56 flex-shrink-0 bg-muted/50 flex items-center justify-center p-6">
+                <div className="h-48 md:h-auto md:w-48 lg:w-56 flex-shrink-0 relative overflow-hidden">
                   <img 
                     src={rogerSymbol} 
                     alt="Olhar Clínico" 
-                    className="w-32 md:w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
 

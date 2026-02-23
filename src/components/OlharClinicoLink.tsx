@@ -17,15 +17,17 @@ export const OlharClinicoLink = () => {
             to="/olhar-clinico"
             className="block group"
           >
-            <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30">
+            <div className="bg-card rounded-2xl shadow-sm border border-border transition-all duration-300 hover:shadow-lg hover:border-primary/30">
               <div className="flex flex-col md:flex-row items-stretch">
                 {/* Imagem à esquerda */}
-                <div className="h-48 md:h-auto md:w-48 lg:w-56 flex-shrink-0 relative overflow-hidden rounded-2xl m-3">
-                  <img 
-                    src={rogerSymbol} 
-                    alt="Olhar Clínico" 
-                    className="absolute inset-0 w-full h-full object-cover rounded-2xl group-hover:scale-110 transition-transform duration-500"
-                  />
+                <div className="h-48 md:h-auto md:w-48 lg:w-56 flex-shrink-0 p-3">
+                  <div className="relative w-full h-full rounded-xl overflow-hidden">
+                    <img 
+                      src={rogerSymbol} 
+                      alt="Olhar Clínico" 
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
                 </div>
 
                 {/* Conteúdo */}

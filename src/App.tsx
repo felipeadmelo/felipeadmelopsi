@@ -1,13 +1,18 @@
-import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
-import YourRoutes from './YourRoutes'; // Assuming you have your routes defined in a separate file
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import OlharClinicoPage from "./pages/OlharClinicoPage";
+import CurriculoPage from "./pages/CurriculoPage";
+import NotFound from "./pages/NotFound";
 
-function App() {
-    return (
-        <Router>
-            <YourRoutes /> {/* Replace this with your actual routes */}
-        </Router>
-    );
-}
+const App = () => (
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/olhar-clinico" element={<OlharClinicoPage />} />
+      <Route path="/curriculo" element={<CurriculoPage />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </HashRouter>
+);
 
 export default App;

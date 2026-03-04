@@ -6,8 +6,18 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 gradient-overlay" />
-      <div className="absolute top-20 right-10 w-64 h-64 bg-primary/5 blob-shape animate-float" />
-      <div className="absolute bottom-20 left-10 w-48 h-48 bg-accent/5 blob-shape animate-float" style={{ animationDelay: "2s" }} />
+      
+      {/* Pinceladas decorativas inspiradas na logo */}
+      <svg className="absolute top-16 right-6 md:right-16 w-48 md:w-72 h-24 md:h-36 opacity-[0.07] text-primary" viewBox="0 0 300 80" fill="none">
+        <path d="M10 45 Q60 10, 140 35 Q200 55, 290 25" stroke="currentColor" strokeWidth="18" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M30 65 Q100 30, 180 55 Q240 70, 280 50" stroke="currentColor" strokeWidth="10" strokeLinecap="round" />
+      </svg>
+      <svg className="absolute bottom-24 left-4 md:left-14 w-40 md:w-56 h-20 md:h-28 opacity-[0.06] text-accent" viewBox="0 0 250 70" fill="none">
+        <path d="M5 40 Q50 5, 120 30 Q180 55, 245 20" stroke="currentColor" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+      <svg className="absolute top-1/3 left-6 md:left-20 w-28 md:w-40 h-12 md:h-16 opacity-[0.05] text-primary rotate-[-15deg]" viewBox="0 0 200 40" fill="none">
+        <path d="M5 25 Q60 5, 120 20 Q160 30, 195 15" stroke="currentColor" strokeWidth="12" strokeLinecap="round" />
+      </svg>
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <img 

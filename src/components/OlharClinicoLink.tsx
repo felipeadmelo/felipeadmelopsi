@@ -20,7 +20,7 @@ export const OlharClinicoLink = () => {
             <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30">
               <div className="flex flex-col md:flex-row items-stretch">
                 {/* Imagem à esquerda */}
-                <div className="h-48 md:h-auto md:w-48 lg:w-56 flex-shrink-0 relative overflow-hidden rounded-t-2xl md:rounded-t-none md:rounded-l-2xl">
+                <div className="h-48 md:h-auto md:w-48 lg:w-56 flex-shrink-0 relative overflow-hidden">
                   <img 
                     src={rogerSymbol} 
                     alt="Olhar Clínico" 

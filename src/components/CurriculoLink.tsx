@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.png";
+import { ArrowRight, Briefcase } from "lucide-react";
 
 export const CurriculoLink = () => {
   return (
@@ -20,12 +19,8 @@ export const CurriculoLink = () => {
             <div className="bg-card rounded-2xl shadow-sm border border-border overflow-hidden transition-all duration-300 hover:shadow-lg hover:border-primary/30">
               <div className="flex flex-col md:flex-row items-stretch">
                 {/* Ícone à esquerda */}
-                <div className="h-48 md:h-auto md:w-48 lg:w-56 flex-shrink-0 relative overflow-hidden">
-                  <img 
-                    src={logo} 
-                    alt="Logo Clínica" 
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                <div className="h-32 md:h-auto md:w-48 lg:w-56 flex-shrink-0 bg-primary/10 flex items-center justify-center">
+                  <Briefcase className="w-16 h-16 text-primary/60 group-hover:scale-110 transition-transform duration-500" />
                 </div>
 
                 {/* Conteúdo */}

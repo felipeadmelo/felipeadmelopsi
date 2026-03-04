@@ -1,13 +1,27 @@
-export default function Index() {
+import { Hero } from "@/components/Hero";
+import { ProcessoTerapeutico } from "@/components/ProcessoTerapeutico";
+import { SobreMim } from "@/components/SobreMim";
+import { AbordagemCentrada } from "@/components/AbordagemCentrada";
+import { OlharClinicoLink } from "@/components/OlharClinicoLink";
+import { CurriculoLink } from "@/components/CurriculoLink";
+import { ComoAtendo } from "@/components/ComoAtendo";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
+
+const Index = () => {
   return (
-    <div style={{ padding: '40px', textAlign: 'center' }}>
-      <h1>Bem-vindo ao meu portfólio!</h1>
-      <p>Felipe Melo</p>
-      <p>Desenvolvedor Full Stack</p>
-      <nav style={{ marginTop: '20px' }}>
-        <a href="/olhar-clinico" style={{ marginRight: '20px' }}>Olhar Clínico</a>
-        <a href="/curriculo">Currículo</a>
-      </nav>
-    </div>
+    <main className="min-h-screen">
+      <Hero />
+      <ProcessoTerapeutico />
+      <SobreMim />
+      <AbordagemCentrada />
+      <OlharClinicoLink />
+      <CurriculoLink />
+      <ComoAtendo />
+      <Footer />
+      <WhatsAppButton size="floating" />
+    </main>
   );
-}
+};
+
+export default Index;

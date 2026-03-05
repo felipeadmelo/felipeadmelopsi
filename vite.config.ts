@@ -1,6 +1,10 @@
-import { defineConfig } from 'vite';
+// vite.config.ts
 
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/',
-  // other configurations
+  plugins: [vue()],
+  // Removed base configuration for original settings
 });

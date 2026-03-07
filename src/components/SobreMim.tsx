@@ -2,7 +2,7 @@ import perfilImg from "@/assets/perfil.jpg";
 import ufpbLogo from "@/assets/ufpb.png";
 import uspLogo from "@/assets/usp.png";
 import proaluLogo from "@/assets/proalu.png";
-import { Building2 } from "lucide-react";
+import socialIcon from "@/assets/social-icon.png";
 
 export const SobreMim = () => {
   const experiencias = [

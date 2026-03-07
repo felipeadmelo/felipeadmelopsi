@@ -12,7 +12,7 @@ export const SobreMim = () => {
       descricao: "Graduado em Psicologia pela Universidade Federal da Paraíba (UFPB), com aprofundamento em psicologia comunitária e clínica. Monitor da disciplina Teoria e Terapia Centrada na Pessoa e estágio supervisionado de base rogeriana na Clínica Escola.",
     },
     {
-      icon: Building2,
+      logo: socialIcon,
       titulo: "Assistência Social",
       descricao: "Atuação em São Paulo com imigrantes e refugiados, idosos e público egresso do sistema prisional, desenvolvendo escuta qualificada e acolhimento de diversas vivências.",
     },

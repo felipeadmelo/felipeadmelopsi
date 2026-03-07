@@ -132,7 +132,7 @@ export const ComoAtendo = () => {
             </div>
             <h3 className="text-2xl font-serif text-foreground mb-4">Online</h3>
             <p className="text-muted-foreground">
-              Atendimento por videochamada para todo o Brasil, com a mesma qualidade e acolhimento.
+              Atendimento por videochamada para todo o Brasil.
             </p>
           </div>
         </div>

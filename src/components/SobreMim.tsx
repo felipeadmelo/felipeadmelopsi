@@ -70,11 +70,7 @@ export const SobreMim = () => {
                   key={index}
                   className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-md transition-all duration-300"
                 >
-                  {"logo" in exp && exp.logo ? (
-                    <img src={exp.logo} alt={exp.titulo} className="h-10 w-auto mb-4 object-contain" />
-                  ) : (
-                    exp.icon && <exp.icon className="w-8 h-8 text-primary mb-4" />
-                  )}
+                  <img src={exp.logo} alt={exp.titulo} className="h-10 w-auto mb-4 object-contain" />
                   <h4 className="font-serif text-xl text-foreground mb-2">{exp.titulo}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">{exp.descricao}</p>
                 </div>

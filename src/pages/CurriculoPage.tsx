@@ -95,9 +95,9 @@ export const CurriculoPage = () => {
 
   const formacao = [
     {
-      titulo: "Especialização em Atendimento Clínico de Famílias Acometidas por Abuso Sexual",
-      instituicao: "PROFAM — Instituto de Psicologia da USP",
-      periodo: "Em andamento"
+      titulo: "Estudos e Atendimento a Famílias Incestuosas",
+      instituicao: "Faculdade de Medicina da USP",
+      periodo: "2025 - 2026"
     },
     {
       titulo: "Psicólogo",

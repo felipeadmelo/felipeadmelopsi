@@ -1,4 +1,5 @@
-import { Monitor, MapPin, Clock, Calendar, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
+import { MapPin, Clock, Calendar, Instagram, ChevronLeft, ChevronRight } from "lucide-react";
+import onlineIcon from "@/assets/online-icon.png";
 import { WhatsAppButton } from "./WhatsAppButton";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -127,8 +128,8 @@ export const ComoAtendo = () => {
 
           {/* Online */}
           <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-            <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-6">
-              <Monitor className="w-8 h-8 text-accent" />
+            <div className="w-20 h-20 flex items-center justify-center mx-auto mb-6">
+              <img src={onlineIcon} alt="Atendimento Online" className="h-16 w-auto object-contain" />
             </div>
             <h3 className="text-2xl font-serif text-foreground mb-4">Online</h3>
             <p className="text-muted-foreground">

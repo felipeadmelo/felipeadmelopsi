@@ -1,10 +1,13 @@
 import perfilImg from "@/assets/perfil.jpg";
-import { GraduationCap, Building2, Heart, Users } from "lucide-react";
+import ufpbLogo from "@/assets/ufpb.png";
+import uspLogo from "@/assets/usp.png";
+import proaluLogo from "@/assets/proalu.png";
+import { Building2 } from "lucide-react";
 
 export const SobreMim = () => {
   const experiencias = [
     {
-      icon: GraduationCap,
+      logo: ufpbLogo,
       titulo: "Formação",
       descricao: "Graduado em Psicologia pela Universidade Federal da Paraíba (UFPB), com aprofundamento em psicologia comunitária e clínica. Monitor da disciplina Teoria e Terapia Centrada na Pessoa e estágio supervisionado de base rogeriana na Clínica Escola.",
     },
@@ -14,14 +17,14 @@ export const SobreMim = () => {
       descricao: "Atuação em São Paulo com imigrantes e refugiados, idosos e público egresso do sistema prisional, desenvolvendo escuta qualificada e acolhimento de diversas vivências.",
     },
     {
-      icon: Heart,
+      logo: uspLogo,
       titulo: "Especialização",
-      descricao: "Finalizando especialização em atendimento clínico de famílias acometidas por abuso sexual no PROFAM, Instituto de Psicologia da USP.",
+      descricao: "Estudos e Atendimento a Famílias Incestuosas — Faculdade de Medicina da USP (2025–2026). Especialização com objetivo de difundir a experiência do trabalho em saúde mental com famílias incestuosas encaminhadas pelas varas da criança e da família, capacitando profissionais para exercer esta função em outras instituições através de discussões teóricas, atendimento clínico às famílias encaminhadas das varas da infância e da família.",
     },
     {
-      icon: Users,
+      logo: proaluLogo,
       titulo: "Acolhimento ao Luto",
-      descricao: "Voluntário no Programa de Acolhimento ao Luto da UNIFESP, participando de formações e supervisões semanais ligadas ao manejo de casos de luto.",
+      descricao: "Voluntário no Programa de Acolhimento ao Luto (PROALU) da UNIFESP, participando de formações e supervisões semanais ligadas ao manejo de casos de luto.",
     },
   ];
 
@@ -67,7 +70,11 @@ export const SobreMim = () => {
                   key={index}
                   className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-md transition-all duration-300"
                 >
-                  <exp.icon className="w-8 h-8 text-primary mb-4" />
+                  {"logo" in exp && exp.logo ? (
+                    <img src={exp.logo} alt={exp.titulo} className="h-10 w-auto mb-4 object-contain" />
+                  ) : (
+                    exp.icon && <exp.icon className="w-8 h-8 text-primary mb-4" />
+                  )}
                   <h4 className="font-serif text-xl text-foreground mb-2">{exp.titulo}</h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">{exp.descricao}</p>
                 </div>

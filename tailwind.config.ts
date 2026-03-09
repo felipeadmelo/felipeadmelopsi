@@ -74,12 +74,12 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         "float": {
-          "0%, 100%": { transform: "translateY(0) rotate(var(--tw-rotate, 0))" },
-          "50%": { transform: "translateY(-6px) rotate(var(--tw-rotate, 0))" },
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
         },
         "float-slow": {
-          "0%, 100%": { transform: "translateY(0) rotate(var(--tw-rotate, 0))" },
-          "50%": { transform: "translateY(-4px) rotate(var(--tw-rotate, 0))" },
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-4px)" },
         },
       },
       animation: {

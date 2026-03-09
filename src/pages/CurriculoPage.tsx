@@ -49,6 +49,7 @@ export const CurriculoPage = () => {
   ];
 
   const experienciaAcademica = [
+    // Mais recentes primeiro
     {
       titulo: "Gente no Centro da Política de Drogas no Brasil: Abordagens Intersetoriais e Integradas (1ª Oferta)",
       tipo: "Curso de Desenvolvimento",

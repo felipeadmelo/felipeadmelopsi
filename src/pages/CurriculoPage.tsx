@@ -231,7 +231,7 @@ export const CurriculoPage = () => {
               </h2>
             </div>
             <div className="space-y-4">
-              {[...experienciaAcademica].reverse().map((item, index) => (
+              {experienciaAcademica.map((item, index) => (
                 <div 
                   key={index}
                   className="bg-card p-5 rounded-xl border border-border"

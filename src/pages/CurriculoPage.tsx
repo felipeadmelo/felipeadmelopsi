@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowLeft, Briefcase, GraduationCap, Globe, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 export const CurriculoPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const experienciaProfissional = [
     {
       titulo: "Técnico Psicólogo",

@@ -31,22 +31,22 @@ export const Hero = () => {
         <img 
           src={logo} 
           alt="Logo Felipe Melo - Psicólogo" 
-          className="w-40 md:w-56 h-auto mx-auto mb-8 animate-fade-in"
+          className="w-40 md:w-56 h-auto mx-auto mb-8"
         />
         
-        <h1 className="text-4xl md:text-6xl font-serif font-medium text-foreground mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <h1 className="text-4xl md:text-6xl font-serif font-medium text-foreground mb-4">
           Felipe Melo
         </h1>
         
-        <p className="text-xl md:text-2xl font-sans text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <p className="text-xl md:text-2xl font-sans text-muted-foreground mb-8">
           Psicólogo | CRP 06/193310
         </p>
         
-        <p className="text-lg md:text-xl font-sans text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: "0.6s" }}>
+        <p className="text-lg md:text-xl font-sans text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed">
           Um espaço seguro para navegar em lugares muitas vezes esquecidos e descobrir novas formas de lidar com o que aflige.
         </p>
         
-        <div className="flex flex-col gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: "0.8s" }}>
+        <div className="flex flex-col gap-6 justify-center items-center" style={{ animationDelay: "0.8s" }}>
           <WhatsAppButton size="lg" />
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
             <a 

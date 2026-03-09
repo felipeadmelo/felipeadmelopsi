@@ -150,7 +150,7 @@ export const CurriculoPage = () => {
             </p>
           </motion.div>
 
-          {/* Formação Acadêmica */}
+          {/* Experiência Profissional */}
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -158,13 +158,13 @@ export const CurriculoPage = () => {
             className="mb-12"
           >
             <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-6 h-6 text-primary" />
+              <Briefcase className="w-6 h-6 text-primary" />
               <h2 className="text-2xl font-serif font-medium text-foreground">
-                Formação Acadêmica
+                Experiência Profissional
               </h2>
             </div>
             <div className="space-y-4">
-              {formacao.map((item, index) => (
+              {[...experienciaProfissional].reverse().map((item, index) => (
                 <div 
                   key={index}
                   className="bg-card p-5 rounded-xl border border-border"
@@ -179,7 +179,7 @@ export const CurriculoPage = () => {
             </div>
           </motion.section>
 
-          {/* Experiência Profissional */}
+          {/* Formação Acadêmica */}
           <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -187,13 +187,13 @@ export const CurriculoPage = () => {
             className="mb-12"
           >
             <div className="flex items-center gap-3 mb-6">
-              <Briefcase className="w-6 h-6 text-primary" />
+              <GraduationCap className="w-6 h-6 text-primary" />
               <h2 className="text-2xl font-serif font-medium text-foreground">
-                Experiência Profissional
+                Formação Acadêmica
               </h2>
             </div>
             <div className="space-y-4">
-              {experienciaProfissional.map((item, index) => (
+              {formacao.map((item, index) => (
                 <div 
                   key={index}
                   className="bg-card p-5 rounded-xl border border-border"
@@ -222,7 +222,7 @@ export const CurriculoPage = () => {
               </h2>
             </div>
             <div className="space-y-4">
-              {experienciaAcademica.map((item, index) => (
+              {[...experienciaAcademica].reverse().map((item, index) => (
                 <div 
                   key={index}
                   className="bg-card p-5 rounded-xl border border-border"
@@ -267,8 +267,6 @@ export const CurriculoPage = () => {
               ))}
             </div>
           </motion.section>
-        </div>
-      </div>
     </main>
   );
 };

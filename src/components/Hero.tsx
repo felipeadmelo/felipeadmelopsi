@@ -34,7 +34,7 @@ export const Hero = () => {
           className="w-40 md:w-56 h-auto mx-auto mb-8"
         />
         
-        <h1 className="text-4xl md:text-6xl font-serif font-medium text-foreground mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <h1 className="text-4xl md:text-6xl font-serif font-medium text-foreground mb-4">
           Felipe Melo
         </h1>
         

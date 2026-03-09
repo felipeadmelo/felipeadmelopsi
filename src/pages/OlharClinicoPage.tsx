@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { OlharClinico } from "@/components/OlharClinico";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
@@ -6,6 +7,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const OlharClinicoPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <main className="min-h-screen">
       <motion.div 

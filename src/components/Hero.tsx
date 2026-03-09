@@ -38,7 +38,7 @@ export const Hero = () => {
           Felipe Melo
         </h1>
         
-        <p className="text-xl md:text-2xl font-sans text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <p className="text-xl md:text-2xl font-sans text-muted-foreground mb-8">
           Psicólogo | CRP 06/193310
         </p>
         

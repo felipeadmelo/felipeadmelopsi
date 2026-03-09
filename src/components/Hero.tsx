@@ -31,7 +31,7 @@ export const Hero = () => {
         <img 
           src={logo} 
           alt="Logo Felipe Melo - Psicólogo" 
-          className="w-40 md:w-56 h-auto mx-auto mb-8 animate-fade-in"
+          className="w-40 md:w-56 h-auto mx-auto mb-8"
         />
         
         <h1 className="text-4xl md:text-6xl font-serif font-medium text-foreground mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>

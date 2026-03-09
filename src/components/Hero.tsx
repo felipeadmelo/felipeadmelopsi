@@ -46,7 +46,7 @@ export const Hero = () => {
           Um espaço seguro para navegar em lugares muitas vezes esquecidos e descobrir novas formas de lidar com o que aflige.
         </p>
         
-        <div className="flex flex-col gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: "0.8s" }}>
+        <div className="flex flex-col gap-6 justify-center items-center" style={{ animationDelay: "0.8s" }}>
           <WhatsAppButton size="lg" />
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm">
             <a 

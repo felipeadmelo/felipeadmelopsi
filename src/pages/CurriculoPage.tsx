@@ -9,11 +9,23 @@ export const CurriculoPage = () => {
     window.scrollTo(0, 0);
   }, []);
   const experienciaProfissional = [
+    // Em andamento
     {
       titulo: "Técnico Psicólogo",
       instituicao: "Instituto Responsa",
       periodo: "Desde 05/25"
     },
+    {
+      titulo: "Psicólogo Clínico",
+      instituicao: "Psicoterapia",
+      periodo: "Desde 02/22"
+    },
+    {
+      titulo: "Voluntário — Programa de Acolhimento ao Luto (PROALU)",
+      instituicao: "UNIFESP",
+      periodo: "Em andamento"
+    },
+    // Concluídas (mais recente primeiro)
     {
       titulo: "Psicólogo Social",
       instituicao: "Núcleo de Convivência de Idosos São Francisco de Assis (Centro Comunitário Nossa Senhora de Aparecida)",
@@ -25,19 +37,9 @@ export const CurriculoPage = () => {
       periodo: "05 - 08/24"
     },
     {
-      titulo: "Psicólogo Clínico",
-      instituicao: "Psicoterapia",
-      periodo: "Desde 02/22"
-    },
-    {
       titulo: "Psicólogo Voluntário",
       instituicao: "Coordenação-Geral do CONARE",
       periodo: "03 - 05/24"
-    },
-    {
-      titulo: "Voluntário — Programa de Acolhimento ao Luto (PROALU)",
-      instituicao: "UNIFESP",
-      periodo: "Em andamento"
     },
     {
       titulo: "Estágio Supervisionado em Psicoterapia",
@@ -47,6 +49,7 @@ export const CurriculoPage = () => {
   ];
 
   const experienciaAcademica = [
+    // Mais recentes primeiro
     {
       titulo: "Gente no Centro da Política de Drogas no Brasil: Abordagens Intersetoriais e Integradas (1ª Oferta)",
       tipo: "Curso de Desenvolvimento",
@@ -98,11 +101,13 @@ export const CurriculoPage = () => {
   ];
 
   const formacao = [
+    // Em andamento
     {
       titulo: "Estudos e Atendimento a Famílias Incestuosas",
       instituicao: "Faculdade de Medicina da USP",
       periodo: "2025 - 2026"
     },
+    // Concluídas
     {
       titulo: "Psicólogo",
       instituicao: "Universidade Federal da Paraíba (UFPB)",
@@ -168,7 +173,7 @@ export const CurriculoPage = () => {
               </h2>
             </div>
             <div className="space-y-4">
-              {[...experienciaProfissional].reverse().map((item, index) => (
+              {experienciaProfissional.map((item, index) => (
                 <div 
                   key={index}
                   className="bg-card p-5 rounded-xl border border-border"
@@ -226,7 +231,7 @@ export const CurriculoPage = () => {
               </h2>
             </div>
             <div className="space-y-4">
-              {[...experienciaAcademica].reverse().map((item, index) => (
+              {experienciaAcademica.map((item, index) => (
                 <div 
                   key={index}
                   className="bg-card p-5 rounded-xl border border-border"

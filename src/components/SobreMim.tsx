@@ -46,8 +46,7 @@ export const SobreMim = () => {
               <img 
                 src={brushstrokes} 
                 alt="" 
-                className="absolute -bottom-6 -left-10 w-28 h-auto opacity-15 -rotate-45 pointer-events-none animate-float"
-                style={{ animationDelay: "1.5s" }}
+                className="absolute -bottom-6 -left-10 w-28 h-auto opacity-15 -rotate-45 pointer-events-none animate-float-slow"
               />
               <img
                 src={perfilImg}

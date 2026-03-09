@@ -9,11 +9,23 @@ export const CurriculoPage = () => {
     window.scrollTo(0, 0);
   }, []);
   const experienciaProfissional = [
+    // Em andamento
     {
       titulo: "Técnico Psicólogo",
       instituicao: "Instituto Responsa",
       periodo: "Desde 05/25"
     },
+    {
+      titulo: "Psicólogo Clínico",
+      instituicao: "Psicoterapia",
+      periodo: "Desde 02/22"
+    },
+    {
+      titulo: "Voluntário — Programa de Acolhimento ao Luto (PROALU)",
+      instituicao: "UNIFESP",
+      periodo: "Em andamento"
+    },
+    // Concluídas (mais recente primeiro)
     {
       titulo: "Psicólogo Social",
       instituicao: "Núcleo de Convivência de Idosos São Francisco de Assis (Centro Comunitário Nossa Senhora de Aparecida)",
@@ -25,19 +37,9 @@ export const CurriculoPage = () => {
       periodo: "05 - 08/24"
     },
     {
-      titulo: "Psicólogo Clínico",
-      instituicao: "Psicoterapia",
-      periodo: "Desde 02/22"
-    },
-    {
       titulo: "Psicólogo Voluntário",
       instituicao: "Coordenação-Geral do CONARE",
       periodo: "03 - 05/24"
-    },
-    {
-      titulo: "Voluntário — Programa de Acolhimento ao Luto (PROALU)",
-      instituicao: "UNIFESP",
-      periodo: "Em andamento"
     },
     {
       titulo: "Estágio Supervisionado em Psicoterapia",

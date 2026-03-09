@@ -267,6 +267,8 @@ export const CurriculoPage = () => {
               ))}
             </div>
           </motion.section>
+        </div>
+      </div>
     </main>
   );
 };

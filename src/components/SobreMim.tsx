@@ -41,12 +41,12 @@ export const SobreMim = () => {
               <img 
                 src={brushstrokes} 
                 alt="" 
-                className="absolute -top-8 -right-12 w-32 h-auto opacity-20 rotate-12 pointer-events-none animate-float"
+                className="absolute -top-8 -right-12 w-32 h-auto opacity-20 rotate-0 pointer-events-none animate-float"
               />
               <img 
                 src={brushstrokes} 
                 alt="" 
-                className="absolute -bottom-6 -left-10 w-28 h-auto opacity-15 -rotate-45 pointer-events-none animate-float-slow"
+                className="absolute -bottom-6 -left-10 w-28 h-auto opacity-15 rotate-0 pointer-events-none animate-float-slow"
               />
               <img
                 src={perfilImg}

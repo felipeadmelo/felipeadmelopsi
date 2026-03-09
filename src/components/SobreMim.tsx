@@ -36,7 +36,7 @@ export const SobreMim = () => {
           {/* Foto e nome */}
           <div className="md:col-span-4 text-center md:sticky md:top-24">
             <div className="relative inline-block">
-              <div className="absolute -inset-3 bg-accent/10 rounded-full" />
+              
               {/* Brushstroke decorations */}
               <img 
                 src={brushstrokes} 

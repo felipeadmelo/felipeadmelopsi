@@ -101,11 +101,13 @@ export const CurriculoPage = () => {
   ];
 
   const formacao = [
+    // Em andamento
     {
       titulo: "Estudos e Atendimento a Famílias Incestuosas",
       instituicao: "Faculdade de Medicina da USP",
       periodo: "2025 - 2026"
     },
+    // Concluídas
     {
       titulo: "Psicólogo",
       instituicao: "Universidade Federal da Paraíba (UFPB)",

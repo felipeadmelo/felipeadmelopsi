@@ -74,8 +74,12 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
+          "0%, 100%": { transform: "translateY(0) rotate(var(--tw-rotate, 0))" },
+          "50%": { transform: "translateY(-6px) rotate(var(--tw-rotate, 0))" },
+        },
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0) rotate(var(--tw-rotate, 0))" },
+          "50%": { transform: "translateY(-4px) rotate(var(--tw-rotate, 0))" },
         },
       },
       animation: {
@@ -83,6 +87,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.8s ease-out forwards",
         "float": "float 6s ease-in-out infinite",
+        "float-slow": "float-slow 8s ease-in-out infinite",
       },
     },
   },

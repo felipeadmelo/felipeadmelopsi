@@ -30,7 +30,7 @@ export const WhatsAppButton = ({ size = "default", className }: WhatsAppButtonPr
         )}
         aria-label="Contato via WhatsApp"
       >
-        <MessageCircle className="w-8 h-8" fill="currentColor" />
+        <WhatsAppIcon className="w-8 h-8" />
       </a>
     );
   }

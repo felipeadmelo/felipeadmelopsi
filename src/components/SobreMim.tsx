@@ -20,7 +20,7 @@ export const SobreMim = () => {
     {
       logo: uspLogo,
       titulo: "Especialização",
-      descricao: "Estudos e Atendimento a Famílias Incestuosas — Faculdade de Medicina da USP (2025–2026). Capacitação em saúde mental com famílias encaminhadas pelas varas da infância e da família.",
+      descricao: "Estudos e Atendimento a Famílias Incestuosas — Faculdade de Medicina da USP (2025–2026). Formação na área de saúde mental com famílias encaminhadas pelas varas da infância e da família.",
     },
     {
       logo: proaluLogo,

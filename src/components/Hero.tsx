@@ -63,22 +63,10 @@ export const Hero = () => {
               Abordagem
             </a>
             <a 
-              href="/olhar-clinico" 
-              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
-            >
-              Olhar Clínico
-            </a>
-            <a 
               href="#atendimento" 
               className="text-muted-foreground hover:text-foreground font-medium transition-colors"
             >
               Como Atendo
-            </a>
-            <a 
-              href="/curriculo" 
-              className="text-muted-foreground hover:text-foreground font-medium transition-colors"
-            >
-              Currículo
             </a>
           </nav>
         </div>

@@ -15,9 +15,9 @@ const Index = () => {
       <ProcessoTerapeutico />
       <SobreMim />
       <AbordagemCentrada />
+      <ComoAtendo />
       <OlharClinicoLink />
       <CurriculoLink />
-      <ComoAtendo />
       <Footer />
       <WhatsAppButton size="floating" />
     </main>

@@ -54,14 +54,8 @@ export const Footer = () => {
           <a href="#abordagem" className="hover:text-secondary-foreground transition-colors">
             Abordagem
           </a>
-          <a href="/olhar-clinico" className="hover:text-secondary-foreground transition-colors">
-            Olhar Clínico
-          </a>
           <a href="#atendimento" className="hover:text-secondary-foreground transition-colors">
             Como Atendo
-          </a>
-          <a href="/curriculo" className="hover:text-secondary-foreground transition-colors">
-            Currículo
           </a>
         </nav>
         

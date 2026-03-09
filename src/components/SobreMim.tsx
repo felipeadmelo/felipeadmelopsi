@@ -3,6 +3,7 @@ import ufpbLogo from "@/assets/ufpb.png";
 import uspLogo from "@/assets/usp.png";
 import proaluLogo from "@/assets/proalu.png";
 import socialIcon from "@/assets/social-icon.png";
+import brushstrokes from "@/assets/brushstrokes.png";
 
 export const SobreMim = () => {
   const experiencias = [
@@ -36,6 +37,18 @@ export const SobreMim = () => {
           <div className="md:col-span-4 text-center md:sticky md:top-24">
             <div className="relative inline-block">
               <div className="absolute -inset-3 bg-accent/10 rounded-full" />
+              {/* Brushstroke decorations */}
+              <img 
+                src={brushstrokes} 
+                alt="" 
+                className="absolute -top-8 -right-12 w-32 h-auto opacity-20 rotate-12 pointer-events-none animate-float"
+              />
+              <img 
+                src={brushstrokes} 
+                alt="" 
+                className="absolute -bottom-6 -left-10 w-28 h-auto opacity-15 -rotate-45 pointer-events-none animate-float"
+                style={{ animationDelay: "1.5s" }}
+              />
               <img
                 src={perfilImg}
                 alt="Felipe Melo - Psicólogo"

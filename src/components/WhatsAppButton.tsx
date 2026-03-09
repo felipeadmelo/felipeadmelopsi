@@ -46,7 +46,7 @@ export const WhatsAppButton = ({ size = "default", className }: WhatsAppButtonPr
       )}
     >
       <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-        <MessageCircle className={cn("fill-current", size === "lg" ? "w-6 h-6" : "w-5 h-5")} />
+        <WhatsAppIcon className={cn(size === "lg" ? "w-6 h-6" : "w-5 h-5")} />
         Agendar consulta
       </a>
     </Button>

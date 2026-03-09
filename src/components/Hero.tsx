@@ -21,11 +21,6 @@ export const Hero = () => {
         className="absolute bottom-24 left-4 md:left-12 w-40 md:w-56 h-auto opacity-[0.12] animate-float-slow pointer-events-none rotate-180"
       />
 
-      <img 
-        src={brushstrokes} 
-        alt="" 
-        className="absolute top-1/3 left-1/4 w-32 md:w-44 h-auto opacity-[0.08] animate-float-slow pointer-events-none -rotate-12"
-      />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <img 

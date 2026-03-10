@@ -127,11 +127,11 @@ export const ComoAtendo = () => {
           </div>
 
           {/* Online */}
-          <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-            <div className="w-64 h-64 flex items-center justify-center mx-auto mb-6">
-              <img src={onlineIcon} alt="Atendimento Online" className="h-64 w-auto object-contain" />
+          <div className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center">
+            <div className="w-48 h-48 flex items-center justify-center mx-auto mb-2">
+              <img src={onlineIcon} alt="Atendimento Online" className="h-48 w-auto object-contain" />
             </div>
-            <h3 className="text-2xl font-serif text-foreground mb-4">Online</h3>
+            <h3 className="text-2xl font-serif text-foreground mb-2">Online</h3>
             <p className="text-muted-foreground">
               Atendimento por videochamada para todo o Brasil.
             </p>

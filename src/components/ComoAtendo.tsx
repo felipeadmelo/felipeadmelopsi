@@ -128,8 +128,8 @@ export const ComoAtendo = () => {
 
           {/* Online */}
           <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-            <div className="w-20 h-20 flex items-center justify-center mx-auto mb-6">
-              <img src={onlineIcon} alt="Atendimento Online" className="h-16 w-auto object-contain" />
+            <div className="w-64 h-64 flex items-center justify-center mx-auto mb-6">
+              <img src={onlineIcon} alt="Atendimento Online" className="h-64 w-auto object-contain" />
             </div>
             <h3 className="text-2xl font-serif text-foreground mb-4">Online</h3>
             <p className="text-muted-foreground">
